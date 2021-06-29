@@ -19,11 +19,27 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('img/jblog.png') }}">
+    
+    <style>
+.container{
+    height: 100%;
+    
+}
+footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(49, 49, 48);
+  
+  text-align: center;
+}
+    </style>
 </head>
 <body>
-    <div id="app">
+    <div id="app page">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm ">
-            <div class="container">
+            <div class="container ">
                 <a class="navbar-brand font-weight-bold display-1" href="{{ url('/') }}">
                     {{ config('app.name', 'JBlog') }}
                 </a>
@@ -81,8 +97,23 @@
     <main class="py-4">
         @yield('content')
     </main>
+   
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+</script>
+
 </div>
-       
+
     </div>
+   
+    
 </body>
+<footer class="footer navbar-fixed-bottom" style="margin-left: 0px !important; bottom:0px">
+    
+    <strong>&copy;2021 Developed By: Jofreezer</strong>
+  
+  </footer>
 </html>

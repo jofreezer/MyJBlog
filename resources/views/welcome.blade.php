@@ -22,7 +22,7 @@
             </div>  
            
             
-            <p style=" color:rgb(70, 69, 68)">{{$post->body}}</p>
+            <p style=" color:rgb(70, 69, 68)">{!!$post->body!!}</p>
             
            
            <small> Posted By {{ $post->user->name}} on {{date('jS M Y',strtotime($post->created_at))}}</small>

@@ -14,7 +14,7 @@ class AddAuthorToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('author');
+            $table->boolean('author')->nullable();
         });
     }
 
