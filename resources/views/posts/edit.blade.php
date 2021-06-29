@@ -13,7 +13,7 @@
     </div>
     <div class="form-group">
         {{Form::label('body', 'Full name')}}
-        {{Form::textarea('body', $post->body,['class'=>'form-control','placeholder'=>' Body'])}}
+        {{Form::textarea('body', $post->body,['class'=>'ckeditor form-control','placeholder'=>' Body'])}}
     </div>
       {{Form::hidden('_method','PUT')}}  
         {{Form::submit('submit',['class'=>'btn btn-primary'])}}

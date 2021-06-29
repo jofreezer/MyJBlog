@@ -20,7 +20,7 @@
         </form>
     </div> --}}
     <div class="form-group">
-        {{Form::label('wysiwyg-editor', 'Create Your Post')}}
+        {{Form::label('body', 'Create Your Post')}}
         {{Form::textarea('body', '',['class'=>' ckeditor form-control','placeholder'=>' Body'])}}
     </div>
   

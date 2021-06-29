@@ -26,7 +26,7 @@
     
 }
 footer{
-    position: fixed;
+    position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -111,7 +111,7 @@ footer{
    
     
 </body>
-<footer class="footer navbar-fixed-bottom" style="margin-left: 0px !important; bottom:0px">
+<footer class="footer" style=" bottom:0px">
     
     <strong>&copy;2021 Developed By: Jofreezer</strong>
   
