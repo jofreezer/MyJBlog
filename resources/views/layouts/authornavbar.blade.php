@@ -26,7 +26,7 @@
     
 }
 footer{
-    position: relative;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -51,7 +51,7 @@ footer{
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="p-2"><a href="/" class="text-decoration-none" style="color:rgb(49, 49, 48)" >Home</a></li>
-                        <li class="p-2"><a href="/home" class="text-decoration-none" style="color:rgb(49, 49, 48)">My posts</a></li>
+                        <li class="p-2"><a href="/home" class="text-decoration-none" style="color:rgb(49, 49, 48)">My Blog</a></li>
                         <li class="p-2"><a href="/contactus" class="text-decoration-none" style="color:rgb(49, 49, 48)">Contact</a></li>
                     </ul>
 

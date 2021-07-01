@@ -1,7 +1,9 @@
 @extends('layouts.authornavbar')
 
 @section('content')
-    <a href="/posts">Go Bck</a>
+<div class="row">
+    <div >
+    <a href="/posts" class="btn btn-primary">Go Back</a>
    
     <h1>{{$post->title}}</h1>
     <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
@@ -13,7 +15,8 @@
           
      
   
-     <table>
+     <table style="width: 50%">
+         
          <tr>
              <td><a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a></td>
              <td>
@@ -32,8 +35,10 @@
      @endif
     
 
-   
+    </div>
+</div> 
 
 @endsection
+
 
 

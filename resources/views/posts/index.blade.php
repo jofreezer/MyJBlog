@@ -1,9 +1,11 @@
 @extends('layouts.authornavbar')
 
 @section('content')
-    <a href="/posts">Go Bck</a>
+<div class="row">
+    <div class="col-8">
+    <a href="/posts" class="btn btn-primary">Go Bck</a>
  
-    <h1>Edit Post</h1>
+    <h1>Edit My blog</h1>
  
     {!! Form::open(['action' =>['PostsController@update',$post->id], 'method'=>'POST']) !!}
     
@@ -13,12 +15,15 @@
     </div>
     <div class="form-group">
         {{Form::label('body', 'Full name')}}
-        {{Form::textarea('body', $post->body,['class'=>'form-control','placeholder'=>' Body'])}}
+        {{Form::textarea('body', $post->body,['class'=>'form-control','placeholder'=>' Body','cols'=>20,'rows'=>0,'maxlength'=>'400'])}}
     </div>
       {{Form::hidden('_method','PUT')}}  
         {{Form::submit('submit',['class'=>'btn btn-primary'])}}
     </div>
 {!! Form::close() !!}
+</div>
+</div>
 @endsection
+
 
 

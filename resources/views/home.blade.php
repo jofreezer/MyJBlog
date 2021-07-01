@@ -1,27 +1,35 @@
 @extends('layouts.authornavbar')
 
 @section('content')
-<div class="container">
  
+    <div class="row bg-dark">
+        
+        <div class="  col-8">
 
- <div>
      <a href="/posts/create" class="btn btn-primary">Create Post</a>
      <div style="text-align: center">
         <h3> {{$posts->count()}} Posts </h3>
         
      </div>
-     @if(count($posts) > 0)
-
+    </div>
+    
+    
    
-     <table class="table table-striped">
-         <tr>
+        
+   
+     <table class="table table-striped col-8" style="width: 50%">
+   
+         <tr class="col-8 " >
+   
              <th>Title</th>
              <th>Posts</th>
              <th></th>
          </tr>
-         
-         @foreach ($posts as $post)
-             <tr>
+         @if(count($posts) > 0)
+                @foreach ($posts as $post)
+        
+             <tr role="row" style="width: 50%">
+                
                 <td>{{$post->title}} </td> 
                 <td>{!!$post->body!!}</td>
                 <td><a href="/posts/{{$post->id}}/edit">Edit</a></td>
@@ -34,13 +42,17 @@
                
                     {!! Form::close() !!}
                 </td>
+             
              </tr>
              {{ $post->user->name}}
-         @endforeach
+             @endforeach
             </table>
             @else
             <p>you have no posts</p>
             @endif
- </div>
+     
 </div>
+
+
+
 @endsection
